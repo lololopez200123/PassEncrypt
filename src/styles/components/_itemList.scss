@@ -1,0 +1,30 @@
+.container-item-list {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-items: center;
+  grid-column-gap: 2em;
+  margin-block: 1rem;
+  width: 100%;
+
+  @include media-breakpoint-down(lg) {
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+  }
+
+  @include media-breakpoint-down(md) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.button-load-more {
+  background-color: transparent;
+  border: none;
+  color: #{$primary};
+  margin: 1rem;
+
+  span {
+    padding-inline: 1em;
+  }
+}
