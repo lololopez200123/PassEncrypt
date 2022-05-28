@@ -11,7 +11,7 @@ import BurguerBtn from 'components/UI/BurguerBtn'
 function Header() {
   return (
     <>
-      <Navbar light color='light' expand>
+      <Navbar light color='dark' expand>
         <Container>
           <Row>
             <Col className='d-flex justify-content-between'>

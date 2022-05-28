@@ -1,11 +1,11 @@
 import Layout from 'components/UI/Layout'
-import Gallery from 'components/screens/Gallery'
+import Home from '@/components/screens/Home'
 import 'styles/main.scss'
 
 function App() {
   return (
     <Layout title={'Gallery'}>
-      <Gallery />
+      <Home />
     </Layout>
   )
 }
